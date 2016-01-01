@@ -1,1 +1,1 @@
-web: gunicorn FinTech.FinTech.wsgi --log-file -
+web: gunicorn FinTech.wsgi --log-file -
