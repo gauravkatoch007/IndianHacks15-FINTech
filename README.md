@@ -7,5 +7,6 @@ Customers keep checking items physically in the supermarket, scanning them with 
 When customer is done preparing desired inventory, he selects checkout from the app. On selecting checkout, customer would get the allotted booth to collect his packaged inventory from. Customer can decide to choose either Cash on delivery at booth or pay online from the app. 
 
 a. This process will reduce queue at checkout, as the bags will come packed from back office (warehouse) with bills, so they don’t have to rescan each item at checkout queue.
+
 b. People get to shop faster, as they don’t have to carry around trolleys.
 
