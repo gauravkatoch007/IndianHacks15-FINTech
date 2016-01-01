@@ -1,0 +1,20 @@
+/*.blink {
+    color: #FF0000 !important;
+}
+
+.adminTable td button.ui-select-match{
+	border: 3px solid transparent !important;
+}
+
+.adminTable td.blink button.ui-select-match {
+	border: 3px solid #ff0000 !important;
+}*/
+
+
+.blinkForUrgent button.ui-select-match{
+	border: 2px solid #ff0000;
+}
+
+.blinkForUrgent i{
+    color: #FF0000 !important;
+}
