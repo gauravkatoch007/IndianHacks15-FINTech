@@ -35,7 +35,7 @@ def register(request):
             user.first_name = username
             user.set_password(password)
             user.save()
-            status = {"status" :True,"message": "User Created Successfully" }
+            status = {"status" :True,"message": "User Created Successfully","username" : user.first_name,  "userId":user.id }
             return HttpResponse(json.dumps(status), content_type = "application/json")
 
 
@@ -56,7 +56,7 @@ def login(request):
         user = auth.authenticate(username=username, password=password)
         if user is not None:
             auth.login(request, user)
-            status = {"status" :True,"message": "Logged in Successfully","userId":user.id }
+            status = {"status" :True,"message": "Logged in Successfully","userId":user.id,"username" : user.first_name }
 
             return HttpResponse(json.dumps(status), content_type = "application/json")
         else:
