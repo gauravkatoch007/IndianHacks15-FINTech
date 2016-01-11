@@ -7,3 +7,4 @@ SQLAlchemy==1.0.4
 whitenoise==1.0.6
 requests==2.3.0
 static3==0.5.1
+dj-database-url
