@@ -1,0 +1,18 @@
+*~
+*.pyc
+*.html~
+.idea
+*REMOTE*
+*LOCAL*
+*BASE*
+*BACKUP*
+*.sqlite3
+*.orig
+migrations/
+Project_Database/
+path.txt
+prepros.cfg
+Media
+
+# ignore mac display settings files
+.DS_Store

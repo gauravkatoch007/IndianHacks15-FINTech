@@ -1,0 +1,195 @@
+body {
+  padding-top: 0px;
+}
+.assign_item_table tr td .cold_item {
+  color: #0066CC;
+}
+.assign_item_table tr td .hot_item {
+  color: #87003D;
+}
+.assign_item_table tr td .def_item {
+  color: black;
+}
+.assign_item_table .checkbox_col {
+  width: 40px;
+  max-width: 40px;
+}
+.assign_item_table .search_col {
+  padding: 0px;
+}
+.assign_item_table .search_col input {
+  border: 2px solid #DDD;
+  text-align: left;
+  width: 100%;
+  padding: 5px 15px;
+  font-size: 1.1em;
+}
+.assign_counter_holder_table .checkbox_col {
+  width: 40px;
+  max-width: 40px;
+}
+.assign_counter_holder_table .search_col {
+  padding: 0px;
+}
+.assign_counter_holder_table .search_col input {
+  border: 2px solid #DDD;
+  text-align: left;
+  width: 100%;
+  padding: 5px 15px;
+  font-size: 1.1em;
+}
+#addNewCounter input {
+  border: 2px solid #DDD;
+  padding: 5px 15px;
+  width: 100%;
+  text-align: left;
+}
+.kith_man_counter_item_holder {
+  padding: 5px 10px 5px 10px;
+  z-index: 100;
+  display: inline-block;
+  background-color: #EEE;
+  width: 280px;
+  height: 180px;
+  color: #666;
+  white-space: nowrap;
+  position: relative;
+  margin: 7px;
+}
+.kith_man_counter_item_holder .remove_counter {
+  z-index: 501;
+  color: #D82821;
+  cursor: pointer;
+  cursor: hand;
+  right: -5px;
+  top: -3px;
+  position: absolute;
+}
+.kith_man_counter_item_holder .counter_header {
+  border-bottom: 1px dotted #000;
+  padding-bottom: 5px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.kith_man_counter_item_holder .counter_header .counter_name {
+  text-align: left;
+  font-weight: bold;
+  font-size: 1em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0px;
+}
+.kith_man_counter_item_holder .counter_header .toolbar_col {
+  padding: 0px;
+  text-align: right;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.kith_man_counter_item_holder .counter_header .toolbar_col button {
+  font-size: 0.5em;
+  padding: 2px 5px;
+}
+.kith_man_counter_item_holder .section_header {
+  font-weight: bold;
+  text-align: left;
+  font-size: 0.85em;
+  margin-bottom: 0px;
+  color: #87003D;
+}
+.kith_man_counter_item_holder .section_header .count {
+  color: #0066CC;
+}
+.kith_man_counter_item_holder .assigned_item_list {
+  padding-left: 0px;
+  list-style: none;
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  max-height: 60px;
+  overflow: hidden;
+}
+.kith_man_counter_item_holder .assigned_item_list li {
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 0.85em;
+}
+.kith_man_counter_item_holder .assigned_staff_list {
+  padding-left: 0px;
+  list-style: none;
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  max-height: 60px;
+  overflow: hidden;
+}
+.kith_man_counter_item_holder .assigned_staff_list li {
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 0.85em;
+}
+.staff_preparation_table thead > tr {
+  background-color: #979797;
+}
+.staff_preparation_table thead > tr th {
+  background-color: #464646;
+  color: #FFF;
+  text-align: center;
+  font-size: 0.85em;
+}
+.staff_preparation_table tbody {
+  background-color: #F7F7F7;
+}
+.staff_preparation_table tbody tr > td {
+  font-weight: bold;
+  text-align: center;
+}
+.staff_preparation_table tbody tr > td p {
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-weight: bold;
+}
+.staff_preparation_table tbody tr > td p > span:first-child {
+  margin-right: 15px;
+  margin-top: 10px;
+  display: inline-block;
+}
+.staff_preparation_table tbody tr > td button {
+  margin-top: 5px;
+  margin-lft: 10px;
+  background-color: #FFF;
+  color: #3071a9;
+}
+.staff_preparation_table thead,
+.staff_preparation_table tbody,
+.staff_preparation_table tr,
+.staff_preparation_table td,
+.staff_preparation_table th {
+  display: block;
+}
+.staff_preparation_table tr:after {
+  content: ' ';
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+.staff_preparation_table thead th {
+  height: 65px;
+  /*text-align: left;*/
+}
+.staff_preparation_table tbody {
+  overflow-y: auto;
+}
+.staff_preparation_table thead {
+  /* fallback */
+}
+.staff_preparation_table tbody td,
+.staff_preparation_table thead th {
+  float: left;
+}

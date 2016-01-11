@@ -1,0 +1,411 @@
+/*@import url(http://fonts.googleapis.com/css?family=Roboto+Slab);*/
+/*@import url(http://fonts.googleapis.com/css?family=Raleway:400,500|Montserrat);*/
+
+
+/*@import url(http://fonts.googleapis.com/css?family=Open+Sans);*/
+
+
+/*user home page background starts*/
+html {
+    overflow-y: scroll;
+}
+
+
+body{
+	background-color: #2D2D2D;
+}
+
+
+/* remove dotted outline */
+a , a:hover, a:active, a:focus{
+   outline: 0;
+}
+
+button, button:hover, button:active, button:focus{
+   outline: 0 !important;
+}
+
+.vag_item{
+	color:#008000 !important;
+}
+
+/*Todays surprise item style starts*/
+
+.cross {
+    position: relative;
+    display: inline-block;
+}
+.cross::before, .cross::after {
+    content: '';
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+.cross::before {
+    border-bottom: 2px solid #D82821;/*#00B16A;*/
+    -webkit-transform: skewY(-10deg);
+    transform: skewY(-10deg);
+}
+/*.cross::after {
+    border-bottom: 2px solid #D82821;
+    -webkit-transform: skewY(10deg);
+    transform: skewY(10deg);
+}*/
+
+
+/*Todays surprise item style ends*/
+
+.fixed_cart_overlay{
+	background-color: #000;
+}
+
+/*fooditem popover*/
+.popover-content{
+	/*width: 300px !important; */
+  white-space: pre;
+  font-family: monospace;
+  font-size:0.8em;
+  /*margin-left: 100px;*/
+}
+
+.popover.right.in.fade{
+	  margin-left: 130px;
+	/*width: 180px !important; */
+}
+
+.popover.right{
+	  margin-left: 130px;
+	/*width: 180px !important; */
+}
+
+.popover.right:hover{
+	opacity: 0.75;
+	margin-left: 130px;
+	/*width: 180px !important; */
+}
+
+.cart_item_unavailable_overlay{
+	position:absolute;
+	top:0;
+	right:0;
+	left:0;
+	bottom:0;
+	z-index:500;
+	/*background-color: rgba(0,0,0,0.5);*/
+	background: url('http://static.frsh.com/images/pixelblack.png') repeat;
+	border:2px solid rgba(255,255,255,0.15);
+}
+
+.item_unavailable_overlay .item_unavailable_custom_popover{
+	/*display: none;*/
+	position:absolute;
+	right:-5px;
+	top:20px;
+	/*left:0px;*/
+	/*bottom: 0px;*/
+	opacity: 0;
+	background: url('http://static.frsh.com/images/pixel.png') repeat;/*rgba(0,0,0,0.85);*/
+	padding:6px;
+	color:#FFF;
+	max-width:100px;
+	max-height:135px;
+	overflow: hidden;
+	font-size:0.8em;
+}
+
+
+.item_unavailable_overlay:hover .item_unavailable_custom_popover{
+	opacity: 1;
+	/*background-color: rgba(0,0,0,.3);*/
+
+	-webkit-animation: fadeIn 0.4s;
+	animation: fadeIn 0.4s;
+}
+
+/*.item_unavailable_overlay:hover .item_unavailable_custom_popover{
+	opacity: 1;
+
+	-webkit-animation: fadeIn 0.4s;
+	animation: fadeIn 0.4s;
+}*/
+
+
+.item_unavailable_overlay .item_unavailable_custom_popover:hover{
+	opacity: 0.45;
+	color:#00B16A;
+	-webkit-animation: fadeIn 1.5s;
+	animation: fadeIn 1.5s;
+}
+
+
+.item_unavailable_overlay{
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+
+
+	/*background-color:rgba(0,0,0,0.5); */
+	border:5px solid rgba(255,255,255,0.15);
+
+	/*-webkit-box-shadow:inset 0 0 2em #FFF;*/
+	/*box-shadow:inset 0 0 2em #999;*/
+
+	/*-webkit-box-shadow:0 0 3em 3em #CCC;*/
+	/*box-shadow:inset 0 0 3em 3em #CCC;*/
+
+
+
+	z-index:500;
+	margin:-5px 15px 14px 15px;
+	color:#FFF;
+	padding:10px;
+
+
+	/*background:black;*/
+    /*background:rgba(0,0,0,0.8);*/
+
+    /*filter:blur(4px);
+    -o-filter:blur(4px);
+    -ms-filter:blur(4px);
+    -moz-filter:blur(4px);
+    -webkit-filter:blur(4px);*/
+
+}
+
+.hide_ticker{
+	display: none;
+	opacity: 0;
+}
+
+.display_specials_holder .display_specials_overlay{
+	opacity: 0;
+	display: none;
+}
+
+.display_specials_holder:hover .display_specials_overlay{
+	opacity: 1;
+	display: block;
+	/*background-color: rgba(0,0,0,.3);*/
+
+	-webkit-animation: fadeIn 0.4s;
+	animation: fadeIn 0.4s;
+}
+
+.display_specials_holder:hover .display_specials_content{
+	opacity: 0;
+}
+
+.list-group-item{
+	padding-top: 7px;
+	padding-bottom: 7px;
+}
+
+.selectedFoodCategory{
+	background-color: #00B16A;
+	color: #fff;
+	font-weight: bold;
+}
+
+.selectedFoodCategory:hover{
+	background-color: #00B16A;
+	color: #fff;
+	font-weight: bold;
+}
+
+/*making food menu categries and search bar sticky on scroll*/
+
+.sticky{
+	position: -webkit-sticky;
+	position: -moz-sticky;
+	position: -ms-sticky;
+	position: -o-sticky;
+	position: sticky;
+	top: 0px;
+	z-index: 1000;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #EEEEEE;
+}
+
+
+
+/*user home page background ends*/
+
+
+/*userview nav bar starts */
+
+.navbar-default {
+	/*background-color: #9b59b6;*/
+	background-color: rgba(0,0,0,.85);
+	/*border-color: #8e44ad;*/
+	border-color: rgba(0,0,0,0);
+	border-radius: 0px;
+}
+
+
+/*controlling navbar height starts*/
+.navbar-default {
+    min-height: 66px;
+}
+
+.navbar-nav > li > a {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    line-height: 66px;
+}
+
+@media (max-width: 767px) {
+    .navbar-nav > li > a {
+    line-height: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;}
+}
+/*controlling navbar height ends*/
+
+
+
+.navbar-default .navbar-brand {
+	color: rgba(255,255,255,1);
+}
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+	color: rgba(255,255,255,.7);
+}
+.navbar-default .navbar-text {
+	color: rgba(255,255,255,1);
+}
+.navbar-default .navbar-nav > li > a {
+	color: rgba(255,255,255,1);
+	font-size: 1.1em;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+	color: rgba(255,255,255,.7);
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+	color: rgba(255,255,255,.7);
+	background-color: rgba(0,0,0,.85);
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+	color: rgba(255,255,255,.7);
+	background-color: rgba(0,0,0,.85);
+}
+.navbar-default .navbar-toggle {
+	border-color: rgba(0,0,0,0);
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+	background-color: rgba(0,0,0,.85);
+}
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: rgba(255,255,255,1);
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+	border-color: rgba(255,255,255,0.1);
+
+}
+.navbar-default .navbar-link {
+	color: rgba(255,255,255,1);
+}
+.navbar-default .navbar-link:hover {
+	color: rgba(255,255,255,.7);
+}
+
+ul.cancel_order_dropdown{
+	background-color: rgba(0,0,0,0.85);
+	color: rgba(255,255,255,1);
+}
+
+/*calcel order dropdown*/
+
+ul.cancel_order_dropdown {
+	color: rgba(255,255,255,0.8);
+}
+
+ul.cancel_order_dropdown input{
+	background-color: rgba(0,0,0,0.2);
+	color: rgba(255,255,255,0.8);
+}
+
+ul.cancel_order_dropdown input[type="text"] {
+  padding: 5px;
+  border: solid 1px rgba(255,255,255,0.35);
+  transition: box-shadow 0.2s, border 0.2s;
+}
+ul.cancel_order_dropdown input[type="text"]:focus,
+ul.cancel_order_dropdown input[type="text"].focus {
+  /*border: solid 1px #707070;*/
+  box-shadow: 0 0 1px 1px rgba(255,255,255,0.5);
+}
+
+.cancel_order_input_margin{
+
+	margin-top: 10px;
+}
+
+.cancel_order_btn{
+	margin-top: 10px;
+	/*background-color: rgba(255,255,255,0.7);*/
+	/*background-color: rgba(0, 177, 106,1);*/
+	/*border: solid 1px rgba(0, 177, 106,0.9);*/
+	background-color: #D82821;
+	border: solid 1px #D82821;
+	color:#FFF;
+	line-height: 1.1em;
+}
+
+.cancel_order_btn:hover{
+	background-color: rgba(255,255,255,1);
+	/*color: rgba(0, 177, 106,1);*/
+	color: #D82821;
+	/*color:rgba(0, 177, 106,0.9);*/
+}
+
+
+.modify_order_btn{
+	margin-top: 10px;
+	/*background-color: rgba(255,255,255,0.7);*/
+	/*background-color: rgba(0, 177, 106,1);*/
+	/*border: solid 1px rgba(0, 177, 106,0.9);*/
+	background-color: #57A2CC;
+	border: solid 1px #57A2CC;
+	color:#FFF;
+	line-height: 1.1em;
+}
+
+.modify_order_btn:hover{
+	background-color: rgba(255,255,255,1);
+	/*color: rgba(0, 177, 106,1);*/
+	color: #57A2CC;
+	/*color:rgba(0, 177, 106,0.9);*/
+}
+
+/*calcel order dropdown ends*/
+
+
+/*setting up logo positoin*/
+img.frsh_logo{
+	/*position: absolute;*/
+	margin-top: 0px;
+	padding: 3px 7px 3px 7px;
+	margin-left: 150px;
+	position: relative;
+	background-color: rgba(255,255,255,1);
+}
+
+img.frsh_logo:hover{
+
+	background-color: rgba(255,255,255,0.95);
+}
+
+/*movile menu hanburger icon*/
+.navbar-toggle{
+margin-top: 15px;
+}
+/*userview nav bar ends */
+
+.marginTop{
+margin-top: -17px;
+}
+

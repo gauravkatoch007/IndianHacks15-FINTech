@@ -1,0 +1,42 @@
+.package-stageI-list-item{
+    margin: @package-stageI-bill-margin-between-list-items;
+
+    .addonGrid{
+        border-left: 1px solid #000; border-top: 1px solid #000; border-bottom: 1px solid #000; margin-bottom: 1mm; padding: 1mm;text-align: center;
+
+        .grid-label{
+            // width: @package-stageI-bill-list-label-width;
+            text-align: center;
+        }
+
+        .grid-value{
+            // width: @package-stageI-bill-list-value-width;
+            text-align: center; border-top: 1px dotted #000; padding-top: 1mm;
+            // text-align: right;
+        }
+
+    }
+
+    .addonGrid:last-child{
+        border-right: 1px solid #000;
+    }
+
+    .list-label{
+        width: @package-stageI-bill-list-label-width;
+        text-align: left;
+    }
+
+    .list-separator{
+        width: @package-stageI-bill-list-separator-width;
+        text-align: center;
+    }
+
+    .list-value{
+        width: @package-stageI-bill-list-value-width;
+        text-align: right;
+    }
+}
+
+.package-stageI-present-addons{
+    font-weight: bold;
+}
