@@ -93,7 +93,7 @@ def getAvailableItems(request):
         items = Item.objects.filter(mall_id = mall.id)
         itemList = []
         for item in items:
-            dic = {"itemId":item.id,"itemName":item.itemName, "description":item.description, "price":item.price,"unit":item.unit,"barcode": item.barcode}
+            dic = {"itemId":item.id,"itemName":item.itemName, "description":item.description, "price":item.price,"unit":item.unit,"barcode": item.barcode,"url" : item.image }
             itemList.append(dic)
 
 

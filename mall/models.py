@@ -14,6 +14,7 @@ class Item(models.Model):
     price = models.IntegerField(default=0)
     unit = models.CharField(max_length=20)
     barcode = models.CharField(max_length=200)
+    image = models.TextField(max_length=1000)
     def __unicode__(self):
         return self.itemName
 
