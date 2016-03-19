@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dip" >
+
+    <LinearLayout android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dip"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="5dip">
+
+        <ImageView
+            android:id="@+id/list_image"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:src="@drawable/ic_launcher"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/thumbnail"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="Item Name"
+        android:textColor="#040404"
+        android:typeface="sans"
+        android:textSize="15dip"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/item_des"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/item_name"
+        android:textColor="#343434"
+        android:textSize="10dip"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="Item Description..."
+        android:layout_toLeftOf="@+id/price"
+        android:layout_toStartOf="@+id/price" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/item_name"
+        android:gravity="right"
+        android:text="₹ 1"
+        android:layout_marginRight="15dip"
+        android:textSize="15dip"
+        android:textColor="#0000c9"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/unit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/item_des"
+        android:layout_below="@+id/price"
+        android:gravity="right"
+        android:text="250 gram"
+        android:layout_toEndOf="@+id/item_des"
+        android:layout_toRightOf="@+id/item_des"
+        android:layout_marginRight="15dip"
+        android:textSize="10dip"
+        android:textColor="#0000c9"
+        android:textStyle="bold"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+ Add To Cart"
+        android:textSize="10dip"
+        android:layout_marginRight="15dip"
+        android:textAllCaps="false"
+        android:background="@null"
+        android:id="@+id/add_to_cart"
+        android:layout_alignBottom="@+id/thumbnail"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:clickable="false"
+        android:stateListAnimator="@null"
+        android:layout_below="@+id/item_des" />
+
+
+</RelativeLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dip" >
+
+    <LinearLayout android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dip"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="5dip">
+
+        <ImageView
+            android:id="@+id/list_image"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:src="@drawable/ic_launcher"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/thumbnail"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="Item Name"
+        android:textColor="#040404"
+        android:typeface="sans"
+        android:textSize="15dip"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="₹ 100"
+        android:textSize="15dip"
+        android:textColor="#0000c9"
+        android:textStyle="bold"
+        android:layout_below="@+id/unit"
+        android:layout_alignLeft="@+id/item_name"
+        android:layout_alignStart="@+id/item_name" />
+
+    <TextView
+        android:id="@+id/unit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1 Kg"
+        android:textSize="10dip"
+        android:textColor="#0000c9"
+        android:textStyle="bold"
+        android:layout_below="@+id/item_name"
+        android:layout_alignLeft="@+id/item_name"
+        android:layout_alignStart="@+id/item_name"
+         />
+<!--    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:text="x"
+        android:textSize="10dp"
+        android:id="@+id/removeItemButton"
+        android:stateListAnimator="@null"
+        android:layout_above="@+id/price"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" /> -->
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="28dp"
+        android:minHeight="28dp"
+        android:text="+"
+        android:textSize="10dp"
+        android:id="@+id/addItem"
+        android:stateListAnimator="@null"
+        android:background="@drawable/round_button"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/decreaseButton"
+        android:layout_alignStart="@+id/decreaseButton" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:id="@+id/buyItemNo"
+        android:gravity="right"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="#A000F0"
+        android:layout_marginRight="23dp"
+        android:layout_marginEnd="23dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/addItem"
+        android:layout_toStartOf="@+id/addItem" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="28dp"
+        android:minHeight="28dp"
+        android:background="@drawable/round_button"
+        android:text="-"
+        android:textSize="10dp"
+        android:id="@+id/decreaseButton"
+        android:stateListAnimator="@null"
+        android:layout_alignBottom="@+id/thumbnail"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>

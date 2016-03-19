@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+<!--android:padding="8dp" -->
+    <!-- Thumbnail Image -->
+    <ImageView
+        android:id="@+id/list_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:padding="10dp"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/shop"
+        android:layout_marginRight="8dp" />
+
+    <!-- Movie Title -->
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/list_image"
+        android:layout_toRightOf="@+id/list_image"
+        android:textSize="18dp"
+        android:textColor="#000000"
+        android:text="Item Name"
+        android:textStyle="bold" />
+
+    <!-- Rating -->
+    <TextView
+        android:id="@+id/item_des"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_name"
+        android:layout_marginTop="1dip"
+        android:text="Description"
+        android:layout_toRightOf="@+id/list_image"
+        android:textSize="10dp" />
+
+    <!-- Genre -->
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/list_image"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:text="Price"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/unit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/price"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:paddingBottom="2dp"
+        android:text=" ( Unit )"
+        android:textSize="12dp" />
+
+    <!-- Release Year -->
+
+    <LinearLayout
+        android:id="@+id/LinearLayout02"
+        android:layout_height="35dp"
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        android:paddingBottom="1dp"
+        android:paddingTop="1dp"
+        >
+
+     <!--   <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/minusButton"
+            android:background="@drawable/button_round"
+            android:text="-"
+            android:textStyle="bold"
+            android:textColor="#000" />
+-->
+        <TextView
+            android:id="@+id/quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:textColor="#000000"
+            android:text="0"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textSize="20dp" />
+<!--
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/plusButton"
+            android:background="@drawable/button_round"
+            android:text="+"
+            android:textStyle="bold"
+            android:textColor="#000" />
+-->
+    </LinearLayout>
+
+
+
+</RelativeLayout>

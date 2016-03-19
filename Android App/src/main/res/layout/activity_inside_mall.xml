@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+
+
+    tools:context="com.example.mohitgarg.fintech.InsideMall">
+    <!--    android:background="@drawable/backrotate"-->
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Scan Bar Code"
+        android:textAllCaps="true"
+        android:id="@+id/scanBarCodeButton"
+        android:background="@drawable/button_border"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+<!--        android:background="#bbff33"
+-->
+    <EditText android:id="@+id/inputSearch"
+        android:layout_below="@+id/scanBarCodeButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search Items..."
+        android:inputType="textVisiblePassword"/>
+
+    <!-- List View -->
+<!--    <ListView
+        android:id="@+id/items_list_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inputSearch"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+-->
+
+    <it.gmariotti.cardslib.library.recyclerview.view.CardRecyclerView
+        android:id="@+id/carddemo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inputSearch"
+        android:layout_above="@+id/checkoutTextView"
+        />
+<!--        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginTop="1dp"
+-->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CheckOut                        ₹ 0"
+        android:textAllCaps="true"
+        android:id="@+id/checkoutTextView"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@drawable/button_border"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+<!--        android:background="#ff6600"
+-->
+
+</RelativeLayout>

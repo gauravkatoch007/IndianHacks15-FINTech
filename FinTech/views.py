@@ -193,7 +193,8 @@ def payment(request):
             message = "Thanks for paying online."
         else:
             message = "Please pay by cash on counter while collecting bag"
-        args = { "success": True,  "message": message, "counter" : order.counter}
+        estimatedWaitTime = random.rantint(10,20)
+        args = { "success": True,  "message": message, "counter" : order.counter, "estimatedWaitTime" : estimatedWaitTime}
         return HttpResponse(json.dumps(args), content_type = "application/json")
     else:
         status = {"status" :False,"message": "Send Post request" }

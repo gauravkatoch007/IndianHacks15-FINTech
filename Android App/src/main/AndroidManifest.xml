@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mohitgarg.fintech" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <activity
+        android:name="com.google.zxing.client.android.CaptureActivity"
+        android:configChanges="orientation|keyboardHidden"
+        android:screenOrientation="landscape"
+        android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+        android:windowSoftInputMode="stateAlwaysHidden" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+        <intent-filter>
+            <action android:name="com.google.zxing.client.android.SCAN" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+    </activity>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo1"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Login"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".Register"
+            android:label="@string/title_activity_register" >
+        </activity>
+
+        <!--
+            <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        -->
+        <activity
+            android:name=".MallsList"
+            android:label="@string/title_activity_malls_list"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name=".ItemLists"
+            android:label="@string/title_activity_item_lists"
+            android:windowSoftInputMode="stateHidden" >
+
+        </activity>
+        <activity
+            android:name=".InsideMall"
+            android:label="@string/title_activity_inside_mall" >
+
+
+
+        </activity>
+        <activity
+            android:name=".barCodeScanner"
+            android:label="@string/title_activity_bar_code_scanner" >
+        </activity>
+        <activity
+            android:name=".checkout"
+            android:label="@string/title_activity_checkout" >
+        </activity>
+        <activity
+            android:name=".payment"
+            android:label="@string/title_activity_payment" >
+        </activity>
+        <activity
+            android:name=".cart"
+            android:label="@string/title_activity_cart" >
+        </activity>
+        <activity
+            android:name=".TestCards"
+            android:label="@string/title_activity_test_cards" >
+        </activity>
+    </application>
+
+</manifest>
